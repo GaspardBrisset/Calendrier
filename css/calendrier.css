@@ -1,0 +1,152 @@
+html
+{
+   background-color:  #F2F3F4;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--fond);
+    color : var(--textColor);
+}
+
+#app, .Days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+@media (min-width: 800px) {
+    #app {   
+        grid-auto-rows: 95px;   
+    }
+    #app, .Days, .entete, .entete1{
+        width: 75%;
+        margin: auto;
+    }
+}
+
+#app {font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;}
+#app>*, .Days {
+    margin: 5px;
+    padding: 15px;
+}
+
+.caseInactive {
+    background-color: gray;  
+}
+
+.caseActive {
+    box-shadow:2px 3px 1px gray;
+    border: 0.7px solid gray ;
+    transition-duration: 3ms, 5ms;
+}
+
+.caseActive:hover {
+    background: rgb(150, 129, 150);
+    color: white;
+    border: 0.7px solid white ;
+    cursor: pointer;
+}
+
+#app, .Days {
+    margin: auto;
+}
+.Days { 
+    display: flex;
+    justify-content: space-between;
+    text-align: center!important;
+}
+.Days div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather';
+    text-transform: uppercase;
+    color: var(--colorA);
+}
+
+#appMonth, #appYear{
+    margin: auto;
+    text-align: center;
+    
+
+}
+#appYear {   
+    text-transform: uppercase;
+    color: var(--colorA) ;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.month, #eventTitre {
+    text-align: center;
+    color: var(--colorC);
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: auto;
+    width: 100%;
+}
+
+.btn #eventAdd {
+  padding: 5px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  font-family: 'Merriweather';
+  border-radius: 5px;
+  border: 0px;
+  background-color: var(--colorA);
+  border: rgb(150, 129, 150);
+  color: var(--colorB);
+  cursor: pointer;
+  margin-top: 5px;
+}
+.btn #eventAdd:hover {
+    background-color: var(--colorB);
+    color: var(--colorA);
+}
+.SwapMois {
+    margin: 4px;
+    margin-top: 10px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.SwapMois button {
+  padding: 5px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  font-family: 'Merriweather';
+  border-radius: 5px;
+  border: 0px;
+  background-color: var(--colorB);
+  border: rgb(150, 129, 150);
+  color: var(--colorA);
+  transition: ease-in 0.4ms;
+  cursor: pointer;
+}
+
+.SwapMois button:hover {
+    color: var(--colorD);
+    background-color: var(--colorA);
+}
+
+div#event.event:nth-child(odd) {
+    background-color: var(--colorC);
+    color: var(--colorText);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+}
+div#event.event:nth-child(even) {
+    background-color: var(--colorD);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.entete1 {
+    text-align: center!important;
+}

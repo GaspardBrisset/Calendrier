@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Application calendrier</title>
+    <link rel="stylesheet" href="./css/calendrier.css">
+    <script src="./js/rendu.js" defer></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div id="appYear"></div>
+        <div id="appMonth"></div>
+
+    </div>
+    <div class="Days">
+        <div>Lun</div>
+        <div>Mar</div>
+        <div>Mer</div>
+        <div>Jeu</div>
+        <div>Ven</div>
+        <div>Sam</div>
+        <div>Dim</div>
+    </div>
+    <div id="app">
+    </div>
+    <div class="btn"> 
+        <div class="SwapMois">
+            <button class="precedent" id="back">Precedent</button>
+            <button class="suivant" id="next">Suivant</button>
+        </div>
+        <button id="eventAdd">Nouveau evenement</button>
+    </div>
+</body>
+
+</html>

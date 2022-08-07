@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modifier un événément</title>
+    <link rel="stylesheet" href="./css/calendrier.css">
+    <script src="./js/rendu.js" defer></script>
+ 
+    
+</head>
+<body>
+    <div class="editEvent">
+        <h1>Modifier un événement</h1>
+
+        <hr/>
+
+        <div class="ligneEdit">
+            <span>Titre</span>
+            <input type="text" id="editTitre">
+        </div>
+
+        <div class="ligneEdit">
+            <span>Date de début</span>
+            <input type="date" id="editStartdate">
+        </div>
+
+        <div class="ligneEdit">
+            <span>Date de fin</span>
+            <input type="date" id="editEnddate">
+        </div>
+
+        <div class="ligneEdit">
+            <span>
+                Localisation
+            </span>
+            <input type="text" id="editLieu">
+        </div>
+
+        <div class="ligneEdit">
+            <span>
+                Catégorie
+            </span>
+            <input type="text" id="editCategorie">
+        </div>
+        
+        <div class="ligneEdit">
+            <span>
+                Statut
+            </span>
+            <input type="text" id="editStatut">
+        </div>
+
+        <div class="ligneEdit">
+            <span>
+                Description
+            </span>
+            <input type="text" id="editDescription">
+        </div>
+
+        <div class="ligneEdit">
+            <span>
+                Transparence
+            </span>
+            <input type="text" id="editTransparence">
+        </div>
+
+        <div class="buttonsAdd">
+            <button id="editValider">Appliquer mes modifications</button>
+            <button id="editAnnuler">Annuler</button>
+        </div>
+
+    </div>
+
+    <script src="./js/update.js"></script>
+</body>
+</html>
